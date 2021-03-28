@@ -1,0 +1,177 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap');
+
+/*
+   Visual Style Sheet Web Development Project
+   Author: Zhanpeng Hu
+   Date: 10/24/2020  
+*/
+
+/* HTML and Body Styles */
+
+html {
+   background-image: url(images/elec_back.png);
+   font-family: Verdana, Geneva, Arial, sans-serif; 	
+}
+
+/* Page Body Styles */
+body {
+   background-image: url(images/back2.gif);  
+   font-family: Verdana, Geneva, Arial, sans-serif;   
+}
+
+
+body > header > nav.horizontalNavigation li {
+   width: 16.66%;
+}
+
+
+/* Horizontal Navigation List Styles */
+
+nav.horizontalNavigation > ul > li {
+   display: block;
+   float: left;
+}
+
+nav.horizontalNavigation a {
+   background-color: rgb(67, 133, 161); 
+   font-family: Piedra, Brush Script MT;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}   
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: rgb(0, 0, 0);
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: rgb(67, 133, 161); 
+   color: rgb(255, 255, 255);
+}   
+
+/* Submenu Styles */
+
+.submenu {
+	display:none;
+    position:absolute;  
+	z-index: 1000;
+}
+
+/* Heading Styles */
+
+h1, h2, h3 {
+   text-indent: 1em;
+}
+
+h1 {
+   font-size: 2.4em;
+   line-height: 2.4em;
+   font-family: Piedra,Brush Script MT;
+   letter-spacing: 0.3em;
+   text-align: center;
+   font-weight: normal;
+   color: rgb(67, 33, 161); 
+}
+
+h2, h3 {
+   font-family: Piedra,Brush Script MT;
+   padding: 0.5em 0;
+}
+
+h2 {
+   font-size: 1.3em;
+   background-color: rgb(67, 33, 161); 
+   color: black;
+}
+
+
+h3 {
+   font-size: 1.5em;
+   color: white;
+}
+
+/* Paragraph Styles */
+
+
+p {
+   margin: 1em;
+   font-size: 1.4em;
+   color: white;
+   font-family: Big Shoulders Stencil Display, Arial, cursive;
+}
+
+/* Left Column Styles */
+
+img#choc {
+   width: 100%;
+   display: block;
+}
+
+/* Right Column Styles */
+
+aside {
+   padding-bottom: 2em;
+   margin-left: 1em;
+}
+
+aside > h2 {
+   text-align: center;
+}
+
+dl {
+   font-size: 1.2em;
+}
+
+dl > dt {
+   color: black;
+   margin: 1em;
+   font-family: Big Shoulders Stencil Display, Arial, cursive;
+}
+
+dl > dd {
+   margin: 0 1em 0 1em;
+   color: rgb(0, 10, 96);
+   font-family: Big Shoulders Stencil Display, Arial, cursive;
+}
+
+/* Footer Styles */
+
+footer {
+   font-size: 0.9em;
+   color: rgb(255, 255, 255);
+}
+
+footer h4 {
+   color: rgb(255, 255, 255);
+   font-size: 1.1em;
+   font-weight: normal;
+   letter-spacing: 0.2em;
+   margin: 1em 0 0.5em 1em;
+}
+
+/* Vertical Navigation Styles */
+
+nav.verticalNavigation ul {
+   margin-left: 1em;
+   line-height: 2em;
+}
+
+nav.verticalNavigation a:link, 
+nav.verticalNavigation a:visited {
+   color: rgb(255, 255, 255);
+}
+
+nav.verticalNavigation a:hover, 
+nav.verticalNavigation a:active {
+   text-decoration: underline;
+}
+
+@media only screen and (max-width: 480px) {
+#jsonima {
+	display:none;
+}	
+}

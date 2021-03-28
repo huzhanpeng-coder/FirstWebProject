@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <meta charset="utf-8" />
+   <meta name="keywords" content="chocolate, chocolatier, cocoa, cacao, desserts" />
+   <title>Next Gen</title>
+	<link href="next_reset.css" rel="stylesheet" />
+	<link href="next_styles1.css" rel="stylesheet" />
+	<link href="next_visual1.css" rel="stylesheet" />
+	<link href="next_home.css" rel="stylesheet" />
+	<link href="next_animate.css" rel="stylesheet" />
+	<link href="next_grids2.css" rel="stylesheet" />
+	<link href="next_forms.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+</head>
+
+<body>
+   <header>
+      <img src="images/next_logo.png" alt="Next Gen" />
+      <nav class="horizontalNavigation">
+         
+            <li><a class="title" href="index.html">Home</a></li>
+            <li><a class="title" href="#">Products</a>
+				<ul class="submenu" id="pro">
+				<a class="title" href="next_devices.html">Devices</a>
+				<a class="title" href="next_components.html">Components</a>
+				</ul>
+			</li>
+			<li><a class="title" href="next_course.html">Courses</a>
+			</li>
+			<li><a class="title" href="next_about.html">About Us</a></li>
+        
+      </nav>
+   </header>
+   
+   <section>
+      <br><br><br><br>
+	  <h1>Payment Form</h1>
+	  <br><br>
+      <form id="payment" action="next_thankyou.html" method="post">
+			
+			<div class="col-1">
+			<fieldset id="billing">
+			<legend>Please enter your information</legend>
+				<label ><i class="fa fa-user"></i>Full Name (Required)</label>
+				<input type="text" value="customer" required />
+				<label ><i class="fa fa-address-card-o"></i>Street Address</label>
+				<input type="text" />
+				<label ><i class="fa fa-institution"></i>City</label>
+				<input type="text" />
+				<label ><i class="fa fa-envelope"></i>Email </label>
+				<input type="text" value="customer@gmail.com" />
+				<label >Country </label>
+				<input type="text" value="Canada" />
+				<label >Zip Code </label>
+				<input type="text" pattern="^\d{5}(-\d{4})?$" />
+				<label >Phone </label>
+				<input type="text" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+			</fieldset>
+			</div>
+			
+			<div class="col-2">
+			<fieldset id="creditCard">
+				<legend>Credit Card Information</legend>
+				<fieldset>
+					<label class="card" >
+						<input type="radio" name="cardimage" />
+						<img src="images/next_amex.png" style="width:70px;height:50px;" >
+					</label>
+					<label class="card" >
+						<input type="radio" name="cardimage" />
+						<img src="images/next_master.png" style="width:70px;height:50px;" >
+					</label>
+					<label class="card" >
+						<input type="radio" name="cardimage" />
+						<img src="images/next_visa.png" style="width:70px;height:50px;" >
+					</label >
+				</fieldset>
+				
+				<label for="cardBox">Credit Card Number</label>
+				<input type="text" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" >
+				
+				<label for="monthList">Expiration Date</label>
+				    <select>
+						<option value="">Month</option>
+						<option value="1">January </option>
+						<option value="2">February </option>
+						<option value="3">March </option>
+						<option value="4">April </option>
+						<option value="5">May </option>
+						<option value="6">June </option>
+						<option value="7">July </option>
+						<option value="8">August </option>
+						<option value="9">September </option>
+						<option value="10">October </option>
+						<option value="11">November </option>
+						<option value="12">December </option>
+					</select>
+
+					<select>
+						<option value="2020">2020 </option>
+						<option value="2021">2021 </option>
+						<option value="2021">2022 </option>
+						<option value="2021">2023 </option>
+						<option value="2021">2024 </option>
+					</select>
+					
+				<label for="cscBox">CSC</label>
+				<input type="text" pattern="^\d{3}$" maxlength="3" />	
+			</fieldset>
+			</div>
+			
+			<button>
+				<input type="submit" value="Continue to checkout">
+			</button>
+			
+	  </form>
+   </section>
+   
+   <footer>
+      <nav class="verticalNavigation">
+         <h4>Follow to us!</h4><br>
+         <ul>
+            
+            <li><a href="#"><img id="fbicon" src="images/fbicon.png" alt="" />Facebook</a></li>
+            <li><a href="#"><img id="twittericon" src="images/twittericon.png" alt="" />Twitter</a></li>
+            <br>
+			
+         </ul>
+      </nav>
+      
+      <nav class="verticalNavigation">
+         <h4>Products and Services</h4>
+		 <ul>
+			<li><a href="next_course.html">Courses</a></li>
+			<li><a href="next_devices.html">Devices </a></li>
+			<li><a href="next_components.html">Components </a></li>
+		 </ul>
+	  </nav>
+	  
+	  <nav class="verticalNavigation">
+         <h4> Others       </h4><br>
+		 <ul>
+			<li><a href="next_about.html">Frequent Questions</a></li>
+		 </ul>
+	  </nav>
+	  
+	  <nav class="verticalNavigation">
+         <h4>Contact us!</h4><br>
+          &nbsp &nbsp 640  Jenna Lane, Ohio 45238<br>
+		  &nbsp &nbsp customerservice@nextgen.com <br>
+		  &nbsp &nbsp Phone: (513) 922-3442 <br>
+          &nbsp &nbsp Toll Free: 1-800-577-1484<br>
+		  &nbsp &nbsp  Mon - Thu: 10 a.m. - 9 p.m.<br>
+          &nbsp &nbsp Sat - Sun: 10 a.m. - 6 p.m.<br>
+          <br><br>
+      </nav>
+	  
+   </footer>
+   
+   
+</body>
+</html>

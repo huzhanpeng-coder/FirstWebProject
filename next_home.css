@@ -1,0 +1,179 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+
+
+/*
+   Visual Style Sheet for Web Development Project
+   Author: Zhanpeng Hu
+   Date: 10/24/2020  
+*/
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .6}
+  to {opacity: 1}
+}
+
+
+/* Horizontal Navigation Styles */
+@media only screen and (min-width: 481px) {
+
+/* Images */
+
+.imagesr {
+	display: block;
+    width: 100%;
+    height: 250px;
+}
+
+/* Body Header Styles */
+body {
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   max-width: 960px;
+   min-width: 640px;
+}
+
+.mySlides {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  width:600px;
+  height:300px;
+}
+
+body > header > img {
+display: block;
+width:100%;
+height:250px;
+
+}
+
+body > header > nav.horizontalNavigation li {width: 25%;}
+body > header > nav.horizontalNavigation ul#pro {width: 15%;left: 33.5%;}
+body > header > nav.horizontalNavigation ul#ser {width: 15%;left: 51.5%;}
+
+nav.horizontalNavigation li {display: block;float: left;}
+nav.horizontalNavigation a {display: block;text-align: center;}
+
+th,td {font-size: 1.5em;}
+
+footer > nav.verticalNavigation {
+float: left;
+width: 25%;
+}
+
+}
+
+
+
+@media only screen and (max-width: 480px) {
+body > header > img {
+display: block;
+width:100%;
+height:100px;
+}
+
+.imagesr {
+	display: none;
+}
+
+body > header > nav.horizontalNavigation li {width: auto;}
+body > header > nav.horizontalNavigation ul#pro {width: auto;}
+body > header > nav.horizontalNavigation ul#ser {width: auto;}
+nav.horizontalNavigation li {display: block;}
+nav.horizontalNavigation a {display: block;}
+th,td {  font-size: 1em;}
+   
+}
+
+nav.horizontalNavigation a {
+    border: 4px double rgb(45, 93, 62);
+	border-radius: 30px;
+	box-shadow: rgba(51, 91, 51, 0.4) 0px 0px 20px 10px;
+}  
+
+/*Submenu*/
+
+ul.submenu {
+display: none;
+}
+
+a:hover+ul.submenu, ul.submenu:hover {
+	display: block;
+	animation-name: fade-ing;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade-ing {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Section Styles */
+
+section{
+	margin-top:5em;
+	margin-bottom:20em;
+}
+
+/* Tables Styles */
+
+table{
+  width:50px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  padding: 8px;
+  border-radius:30px;
+  -moz-border-radius:30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  background: linear-gradient( 150deg, #000428 0%, #004e92 100% );
+}
+
+th,td {
+  font-family: Big Shoulders Stencil Display, Arial, cursive;	
+  text-align: center;
+  border-collapse: collapse;
+  padding: 8px;
+  }
+
+th {color: white;}
+tr:nth-child(even){background-color: #f2f2f2}
+tr:nth-child(odd){color: white}
+
+#member {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  background-color: #f1f1c1;
+}
+
+/* Footer Styles */
+
+footer {
+font-family: Big Shoulders Stencil Display, Arial, cursive;
+font-size: 1.2em;
+background-color: rgb(0,0,0);
+clear: left;
+}
+
+footer::after {
+clear: both;
+content: "";
+display: table;
+}

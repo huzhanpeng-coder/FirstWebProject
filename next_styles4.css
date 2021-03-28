@@ -1,0 +1,141 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&display=swap');
+
+/* HTML and Body Styles */
+
+html {
+   background-image: url(images/elec_back.png);
+   font-family: Verdana, Geneva, Arial, sans-serif; 	
+}
+
+/* Page Body Styles */
+body {
+   background-image: url(images/back2.gif); 
+   background-size: 1100px 420px;
+   font-family: Verdana, Geneva, Arial, sans-serif;   
+}
+
+
+/* Horizontal Navigation Styles */
+
+nav.horizontalNavigation a {
+   background-color: rgb(67, 133, 161); 
+   font-family: Piedra, Brush Script MT, cursive;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}   
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: rgb(0, 0, 0);
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: rgb(67, 133, 161); 
+   color: rgb(255, 255, 255);
+}   
+
+/* Submenu Styles */
+
+.submenu {
+	display:none;
+    position:absolute;  
+	z-index: 1000;
+}
+
+/* Heading Styles */
+
+h1, h2, h3 {
+   text-indent: 1em;
+}
+
+h1 {
+   font-size: 2.4em;
+   line-height: 2.4em;
+   font-family: Piedra,Arial;
+   letter-spacing: 0.3em;
+   text-align: center;
+   font-weight: normal;
+   color: white; 
+}
+
+h2{
+   font-family: Piedra,Arial;
+   padding: 0.5em 0;
+   font-size: 2em;
+   background-color: rgb(67, 33, 161); 
+   color: white;
+}
+
+/* Images */
+
+.images {
+	display: block;
+    width: 100%;
+    height: 250px;
+	opacity: 1;
+    transition: .8s ease;
+    backface-visibility: hidden;
+}
+
+/* Paragraph Styles */
+
+p {
+   position: relative;
+   margin-right: 1em;
+   margin-left: 1em;
+   font-family: Big Shoulders Stencil Display, Arial, cursive;
+   font-size: 1.1em;
+   color: white;
+   z-index:1000;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/* Footer Styles */
+
+footer {
+   font-size: 0.9em;
+   color: rgb(255, 255, 255);
+}
+
+footer h4 {
+   color: rgb(255, 255, 255);
+   font-size: 1.1em;
+   font-weight: normal;
+   letter-spacing: 0.2em;
+   margin: 1em 0 0.5em 1em;
+}
+
+/* Vertical Navigation Styles */
+
+nav.verticalNavigation ul {
+   margin-left: 1em;
+   line-height: 2em;
+}
+
+nav.verticalNavigation a:link, 
+nav.verticalNavigation a:visited {
+   color: rgb(255, 255, 255);
+}
+
+nav.verticalNavigation a:hover, 
+nav.verticalNavigation a:active {
+   text-decoration: underline;
+}
+
+
